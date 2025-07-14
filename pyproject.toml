@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "financial-hedging-system"
+version = "0.1.0"
+description = "A Python-based backend system for financial hedging."
+authors = ["Jules"]
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.78.0"
+uvicorn = "^0.18.2"
+pydantic = "^1.9.1"
+QuantLib-Python = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0" , "setuptools"]
+build-backend = "poetry.core.masonry.api"
